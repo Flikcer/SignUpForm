@@ -1,3 +1,4 @@
+//V3. functionality should be final
 // Get the form element
 const form = document.querySelector("form");
 
