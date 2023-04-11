@@ -1,0 +1,197 @@
+/* Apply a box-sizing border-box to all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set a default margin and padding for the body */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Set a default font and text color */
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+/* Style the container element */
+.container {
+  display: flex;
+  height: 100vh;
+  position: relative;
+}
+
+/* Style the logo element */
+.logo {
+  z-index: 1;
+  flex-basis: 40%;
+  background-image: url("assets/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+/* Style the logo text element */
+.logo h1 {
+  margin: 0;
+  font-size: 3em;
+  text-align: center;
+  text-shadow: 1px 1px #ccc;
+}
+
+/* Style the logo text and image */
+.logo-text {
+  display: flex;
+  align-items: center;
+  opacity: 1;
+}
+
+.logo-text img {
+  height: 50px;
+  margin-right: 10px;
+  opacity: 1;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+}
+
+/* Style the main element */
+.main {
+  flex-basis: 70%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f2f2f2;
+}
+
+/* Style the form container element */
+.form-container {
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 600px;
+}
+
+/* Style the form element */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Style the form group element */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin: 10px;
+  width: 100%;
+  max-width: 400px;
+}
+
+/* Style the label element */
+label {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+/* Style the input element */
+input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  font-size: 16px;
+  width: 100%;
+}
+
+/* Style the button element */
+button {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Add a hover effect to the button element */
+button:hover {
+  background-color: #3e8e41;
+}
+.gray-overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: #000;
+  opacity: 0.5;
+  z-index: 2;
+}
+
+/* Style the modal container element */
+.modal-container {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  z-index: 3;
+}
+
+/* Style the close button element */
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  color: #ccc;
+  cursor: pointer;
+}
+
+/* Add a hover effect to the close button element */
+.close-btn:hover {
+  color: #333;
+}
+
+/* Style the success message element */
+.success-message {
+  color: #4caf50;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+/* Style the error message element */
+.error-message {
+  color: #f44336;
+  font-weight: bold;
+  margin-top: 10px;
+}
+#sign-in-link {
+  color: green;
+  font-size: 1rem;
+  font-weight: bold;
+  text-decoration: underline;
+  text-underline-offset: 4px;
+  line-height: 1.5;
+  border-bottom: 2px solid green;
+}

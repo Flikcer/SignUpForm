@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sign Up Page</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="logo">
+        <div class="logo-container">
+          <div class="logo-text">
+            <img src="assets/logo.png" alt="Company Logo" class="logo-image" />
+            <h1>Company Name</h1>
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <h2>Hello!</h2>
+        <p>
+          Welcome to our sign-up page. Please fill out the form below to create
+          your account.
+        </p>
+        <div class="form-container">
+          <form id="myForm">
+            <div class="form-group">
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" required />
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" id="email" name="email" required />
+            </div>
+            <div class="form-group">
+              <label for="username">Username</label>
+              <input type="text" id="username" name="username" />
+              <span class="error" id="username-error"
+                >Username is required</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="password">Password</label>
+              <input type="password" id="password" name="password" />
+              <span class="error" id="password-error"
+                >Password is required</span
+              >
+            </div>
+            <div class="form-group">
+              <label for="confirm-password">Confirm Password</label>
+              <input
+                type="password"
+                id="confirm-password"
+                name="confirm-password"
+              />
+              <span class="error" id="confirm-password-error"
+                >Passwords do not match</span
+              >
+            </div>
+            <div id="error-message" style="display: none; color: red">
+              Passwords do not match
+            </div>
+
+            <button type="submit">Sign Up!</button>
+          </form>
+        </div>
+        <p>
+          Already a member? Sign in <a href="#" id="sign-in-link">here!</a>!
+        </p>
+      </div>
+    </div>
+
+    <script src="function.js"></script>
+  </body>
+</html>
